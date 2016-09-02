@@ -30,9 +30,14 @@
             3 Letters
         </quasar-tab>
 
+        <quasar-tab target="#tab-noVowels">
+            No vowels
+        </quasar-tab>
+
     </quasar-tabs>
 
     <!-- Targets -->
+    <!-- NATO phonetic instead of letters in tag names because Vue doesn't like single letter words in their custom components -->
     <juliet-words id="tab-j"></juliet-words>
 
     <quebec-words id="tab-q"></quebec-words>
@@ -47,6 +52,8 @@
 
     <three-letter-words id="tab-threeLetters"></three-letter-words>
 
+    <no-vowels id="tab-noVowels"></no-vowels>
+
 </template>
 
 <script>
@@ -58,6 +65,7 @@ import xrayWords from './wordlists/xray-words.vue'
 import zebraWords from './wordlists/zebra-words.vue'
 import twoLetterWords from './wordlists/two-words.vue'
 import threeLetterWords from './wordlists/three-words.vue'
+import noVowels from './wordlists/no-vowels.vue'
 
 export default {
   data () {
@@ -70,7 +78,8 @@ export default {
     xrayWords,
     zebraWords,
     twoLetterWords,
-    threeLetterWords
+    threeLetterWords,
+    noVowels
   }
 }
 </script>

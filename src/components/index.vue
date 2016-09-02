@@ -3,7 +3,7 @@
   <quasar-layout>
     <div slot="header" class="toolbar">
       <quasar-toolbar-title :padding="1">
-        Nth - Difficult Words
+        Nth - hard words
       </quasar-toolbar-title>
     </div>
 

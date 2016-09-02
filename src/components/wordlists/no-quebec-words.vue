@@ -1,5 +1,6 @@
 <template>
   <ul>
+<!-- ideal world: data bind to <li> here with v-repeat -->
     <li>BUQSHA(S)</li>
     <li>BURQA</li>
     <li>FAQIR(S)</li>
@@ -26,7 +27,9 @@
 <script>
 export default {
   data () {
-    return {}
+    return {
+        // vue-resource to grab json formatted words/definitions
+    }
   }
 }
 </script>
