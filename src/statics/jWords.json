@@ -1,0 +1,902 @@
+[
+    {
+    "word": "AJAR",
+    "description": ""
+    },
+    {
+    "word": "AJEE",
+    "description": ""
+    },
+    {
+    "word": "AJIVA",
+    "description": ""
+    },
+    {
+    "word": "AJUGA",
+    "description": ""
+    },
+    {
+    "word": "BANJO",
+    "description": ""
+    },
+    {
+    "word": "BIJOU",
+    "description": ""
+    },
+    {
+    "word": "CAJON",
+    "description": ""
+    },
+    {
+    "word": "DJIN(S)",
+    "description": ""
+    },
+    {
+    "word": "DJINN",
+    "description": ""
+    },
+    {
+    "word": "DOJO(S)",
+    "description": ""
+    },
+    {
+    "word": "EJECT",
+    "description": ""
+    },
+    {
+    "word": "ENJOY",
+    "description": ""
+    },
+    {
+    "word": "FJELD",
+    "description": ""
+    },
+    {
+    "word": "FJORD",
+    "description": ""
+    },
+    {
+    "word": "FUJI(S)",
+    "description": ""
+    },
+    {
+    "word": "GANJA",
+    "description": ""
+    },
+    {
+    "word": "HADJ",
+    "description": ""
+    },
+    {
+    "word": "HADJI",
+    "description": ""
+    },
+    {
+    "word": "HAJ",
+    "description": ""
+    },
+    {
+    "word": "HAJES",
+    "description": ""
+    },
+    {
+    "word": "HAJI(S)",
+    "description": ""
+    },
+    {
+    "word": "HAJJ",
+    "description": ""
+    },
+    {
+    "word": "HAJJI",
+    "description": ""
+    },
+    {
+    "word": "HIJAB",
+    "description": ""
+    },
+    {
+    "word": "JAB(S)",
+    "description": ""
+    },
+    {
+    "word": "JABOT",
+    "description": ""
+    },
+    {
+    "word": "JACAL",
+    "description": ""
+    },
+    {
+    "word": "JACK(S)",
+    "description": ""
+    },
+    {
+    "word": "JACKY",
+    "description": ""
+    },
+    {
+    "word": "JADE(S)",
+    "description": ""
+    },
+    {
+    "word": "JADED",
+    "description": ""
+    },
+    {
+    "word": "JAG(S)",
+    "description": ""
+    },
+    {
+    "word": "JAGER",
+    "description": ""
+    },
+    {
+    "word": "JAGG(S)",
+    "description": ""
+    },
+    {
+    "word": "JAGGY",
+    "description": ""
+    },
+    {
+    "word": "JAGRA",
+    "description": ""
+    },
+    {
+    "word": "JAIL(S)",
+    "description": ""
+    },
+    {
+    "word": "JAKE(S)",
+    "description": ""
+    },
+    {
+    "word": "JALAP",
+    "description": ""
+    },
+    {
+    "word": "JALOP",
+    "description": ""
+    },
+    {
+    "word": "JAM(S)",
+    "description": ""
+    },
+    {
+    "word": "JAMB(S)",
+    "description": ""
+    },
+    {
+    "word": "JAMBE",
+    "description": ""
+    },
+    {
+    "word": "JAMMY",
+    "description": ""
+    },
+    {
+    "word": "JANE(S)",
+    "description": ""
+    },
+    {
+    "word": "JANKY",
+    "description": ""
+    },
+    {
+    "word": "JANTY",
+    "description": ""
+    },
+    {
+    "word": "JAPAN",
+    "description": ""
+    },
+    {
+    "word": "JAPE(S)",
+    "description": ""
+    },
+    {
+    "word": "JAPED",
+    "description": ""
+    },
+    {
+    "word": "JAPER",
+    "description": ""
+    },
+    {
+    "word": "JAR(S)",
+    "description": ""
+    },
+    {
+    "word": "JARL(S)",
+    "description": ""
+    },
+    {
+    "word": "JATO(S)",
+    "description": ""
+    },
+    {
+    "word": "JAUK(S)",
+    "description": ""
+    },
+    {
+    "word": "JAUNT",
+    "description": ""
+    },
+    {
+    "word": "JAUP(S)",
+    "description": ""
+    },
+    {
+    "word": "JAVA(S)",
+    "description": ""
+    },
+    {
+    "word": "JAW(S)",
+    "description": ""
+    },
+    {
+    "word": "JAWAN",
+    "description": ""
+    },
+    {
+    "word": "JAWED",
+    "description": ""
+    },
+    {
+    "word": "JAY(S)",
+    "description": ""
+    },
+    {
+    "word": "JAZZ",
+    "description": ""
+    },
+    {
+    "word": "JAZZY",
+    "description": ""
+    },
+    {
+    "word": "JEAN(S)",
+    "description": ""
+    },
+    {
+    "word": "JEBEL",
+    "description": ""
+    },
+    {
+    "word": "JEE(S)",
+    "description": ""
+    },
+    {
+    "word": "JEED",
+    "description": ""
+    },
+    {
+    "word": "JEEP(S)",
+    "description": ""
+    },
+    {
+    "word": "JEER(S)",
+    "description": ""
+    },
+    {
+    "word": "JEEZ",
+    "description": ""
+    },
+    {
+    "word": "JEFE(S)",
+    "description": ""
+    },
+    {
+    "word": "JEHAD",
+    "description": ""
+    },
+    {
+    "word": "JEHU(S)",
+    "description": ""
+    },
+    {
+    "word": "JELL(S)",
+    "description": ""
+    },
+    {
+    "word": "JELLY",
+    "description": ""
+    },
+    {
+    "word": "JEMMY",
+    "description": ""
+    },
+    {
+    "word": "JENNY",
+    "description": ""
+    },
+    {
+    "word": "JEON",
+    "description": ""
+    },
+    {
+    "word": "JERID",
+    "description": ""
+    },
+    {
+    "word": "JERK(S)",
+    "description": ""
+    },
+    {
+    "word": "JERKY",
+    "description": ""
+    },
+    {
+    "word": "JERRY",
+    "description": ""
+    },
+    {
+    "word": "JESS",
+    "description": ""
+    },
+    {
+    "word": "JESSE",
+    "description": ""
+    },
+    {
+    "word": "JEST(S)",
+    "description": ""
+    },
+    {
+    "word": "JET(S)",
+    "description": ""
+    },
+    {
+    "word": "JETE(S)",
+    "description": ""
+    },
+    {
+    "word": "JETON",
+    "description": ""
+    },
+    {
+    "word": "JETTY",
+    "description": ""
+    },
+    {
+    "word": "JEU",
+    "description": ""
+    },
+    {
+    "word": "JEUX",
+    "description": ""
+    },
+    {
+    "word": "JEWED",
+    "description": ""
+    },
+    {
+    "word": "JEWEL",
+    "description": ""
+    },
+    {
+    "word": "JIAO",
+    "description": ""
+    },
+    {
+    "word": "JIB(S)",
+    "description": ""
+    },
+    {
+    "word": "JIBB(S)",
+    "description": ""
+    },
+    {
+    "word": "JIBE(S)",
+    "description": ""
+    },
+    {
+    "word": "JIBED",
+    "description": ""
+    },
+    {
+    "word": "JIBER",
+    "description": ""
+    },
+    {
+    "word": "JIFF(S)",
+    "description": ""
+    },
+    {
+    "word": "JIFFY",
+    "description": ""
+    },
+    {
+    "word": "JIG(S)",
+    "description": ""
+    },
+    {
+    "word": "JIGGY",
+    "description": ""
+    },
+    {
+    "word": "JIHAD",
+    "description": ""
+    },
+    {
+    "word": "JILL(S)",
+    "description": ""
+    },
+    {
+    "word": "JILT(S)",
+    "description": ""
+    },
+    {
+    "word": "JIMMY",
+    "description": ""
+    },
+    {
+    "word": "JIMP",
+    "description": ""
+    },
+    {
+    "word": "JIMPY",
+    "description": ""
+    },
+    {
+    "word": "JIN(S)",
+    "description": ""
+    },
+    {
+    "word": "JINGO",
+    "description": ""
+    },
+    {
+    "word": "JINK(S)",
+    "description": ""
+    },
+    {
+    "word": "JINN(S)",
+    "description": ""
+    },
+    {
+    "word": "JINNI",
+    "description": ""
+    },
+    {
+    "word": "JINX",
+    "description": ""
+    },
+    {
+    "word": "JISM(S)",
+    "description": ""
+    },
+    {
+    "word": "JIVE(S)",
+    "description": ""
+    },
+    {
+    "word": "JIVED",
+    "description": ""
+    },
+    {
+    "word": "JIVER",
+    "description": ""
+    },
+    {
+    "word": "JIVEY",
+    "description": ""
+    },
+    {
+    "word": "JIVY",
+    "description": ""
+    },
+    {
+    "word": "JNANA",
+    "description": ""
+    },
+    {
+    "word": "JO",
+    "description": ""
+    },
+    {
+    "word": "JOB(S)",
+    "description": ""
+    },
+    {
+    "word": "JOCK(S)",
+    "description": ""
+    },
+    {
+    "word": "JOCKO",
+    "description": ""
+    },
+    {
+    "word": "JOE(S)",
+    "description": ""
+    },
+    {
+    "word": "JOEY(S)",
+    "description": ""
+    },
+    {
+    "word": "JOG(S)",
+    "description": ""
+    },
+    {
+    "word": "JOHN(S)",
+    "description": ""
+    },
+    {
+    "word": "JOIN(S)",
+    "description": ""
+    },
+    {
+    "word": "JOINT",
+    "description": ""
+    },
+    {
+    "word": "JOIST",
+    "description": ""
+    },
+    {
+    "word": "JOKE(S)",
+    "description": ""
+    },
+    {
+    "word": "JOKED",
+    "description": ""
+    },
+    {
+    "word": "JOKER",
+    "description": ""
+    },
+    {
+    "word": "JOKEY",
+    "description": ""
+    },
+    {
+    "word": "JOKY",
+    "description": ""
+    },
+    {
+    "word": "JOLE(S)",
+    "description": ""
+    },
+    {
+    "word": "JOLLY",
+    "description": ""
+    },
+    {
+    "word": "JOLT(S)",
+    "description": ""
+    },
+    {
+    "word": "JOLTY",
+    "description": ""
+    },
+    {
+    "word": "JOMON",
+    "description": ""
+    },
+    {
+    "word": "JONES",
+    "description": ""
+    },
+    {
+    "word": "JORAM",
+    "description": ""
+    },
+    {
+    "word": "JORUM",
+    "description": ""
+    },
+    {
+    "word": "JOSH",
+    "description": ""
+    },
+    {
+    "word": "JOSS",
+    "description": ""
+    },
+    {
+    "word": "JOT(S)",
+    "description": ""
+    },
+    {
+    "word": "JOTA(S)",
+    "description": ""
+    },
+    {
+    "word": "JOTTY",
+    "description": ""
+    },
+    {
+    "word": "JOUAL",
+    "description": ""
+    },
+    {
+    "word": "JOUK(S)",
+    "description": ""
+    },
+    {
+    "word": "JOULE",
+    "description": ""
+    },
+    {
+    "word": "JOUST",
+    "description": ""
+    },
+    {
+    "word": "JOW(S)",
+    "description": ""
+    },
+    {
+    "word": "JOWAR",
+    "description": ""
+    },
+    {
+    "word": "JOWED",
+    "description": ""
+    },
+    {
+    "word": "JOWL(S)",
+    "description": ""
+    },
+    {
+    "word": "JOWLY",
+    "description": ""
+    },
+    {
+    "word": "JOY(S)",
+    "description": ""
+    },
+    {
+    "word": "JOYED",
+    "description": ""
+    },
+    {
+    "word": "JUBA(S)",
+    "description": ""
+    },
+    {
+    "word": "JUBE(S)",
+    "description": ""
+    },
+    {
+    "word": "JUCO(S)",
+    "description": ""
+    },
+    {
+    "word": "JUDAS",
+    "description": ""
+    },
+    {
+    "word": "JUDGE",
+    "description": ""
+    },
+    {
+    "word": "JUDO(S)",
+    "description": ""
+    },
+    {
+    "word": "JUG(S)",
+    "description": ""
+    },
+    {
+    "word": "JUGA",
+    "description": ""
+    },
+    {
+    "word": "JUGAL",
+    "description": ""
+    },
+    {
+    "word": "JUGUM",
+    "description": ""
+    },
+    {
+    "word": "JUICE",
+    "description": ""
+    },
+    {
+    "word": "JUICY",
+    "description": ""
+    },
+    {
+    "word": "JUJU(S)",
+    "description": ""
+    },
+    {
+    "word": "JUKE(S)",
+    "description": ""
+    },
+    {
+    "word": "JUKED",
+    "description": ""
+    },
+    {
+    "word": "JUKU(S)",
+    "description": ""
+    },
+    {
+    "word": "JULEP",
+    "description": ""
+    },
+    {
+    "word": "JUMBO",
+    "description": ""
+    },
+    {
+    "word": "JUMP(S)",
+    "description": ""
+    },
+    {
+    "word": "JUMPY",
+    "description": ""
+    },
+    {
+    "word": "JUN",
+    "description": ""
+    },
+    {
+    "word": "JUNCO",
+    "description": ""
+    },
+    {
+    "word": "JUNK(S)",
+    "description": ""
+    },
+    {
+    "word": "JUNKY",
+    "description": ""
+    },
+    {
+    "word": "JUNTA",
+    "description": ""
+    },
+    {
+    "word": "JUNTO",
+    "description": ""
+    },
+    {
+    "word": "JUPE(S)",
+    "description": ""
+    },
+    {
+    "word": "JUPON",
+    "description": ""
+    },
+    {
+    "word": "JURA",
+    "description": ""
+    },
+    {
+    "word": "JURAL",
+    "description": ""
+    },
+    {
+    "word": "JURAT",
+    "description": ""
+    },
+    {
+    "word": "JUREL",
+    "description": ""
+    },
+    {
+    "word": "JUROR",
+    "description": ""
+    },
+    {
+    "word": "JURY",
+    "description": ""
+    },
+    {
+    "word": "JUS",
+    "description": ""
+    },
+    {
+    "word": "JUST(S)",
+    "description": ""
+    },
+    {
+    "word": "JUT(S)",
+    "description": ""
+    },
+    {
+    "word": "JUTE(S)",
+    "description": ""
+    },
+    {
+    "word": "JUTTY",
+    "description": ""
+    },
+    {
+    "word": "KANJI",
+    "description": ""
+    },
+    {
+    "word": "KOJI",
+    "description": ""
+    },
+    {
+    "word": "KOPJE",
+    "description": ""
+    },
+    {
+    "word": "MAJOR",
+    "description": ""
+    },
+    {
+    "word": "MOJO(S)",
+    "description": ""
+    },
+    {
+    "word": "MUJIK",
+    "description": ""
+    },
+    {
+    "word": "NINJA",
+    "description": ""
+    },
+    {
+    "word": "OBJET",
+    "description": ""
+    },
+    {
+    "word": "PUJA(S)",
+    "description": ""
+    },
+    {
+    "word": "PUJAH",
+    "description": ""
+    },
+    {
+    "word": "PUNJI",
+    "description": ""
+    },
+    {
+    "word": "RAJ",
+    "description": ""
+    },
+    {
+    "word": "RAJA(S)",
+    "description": ""
+    },
+    {
+    "word": "RAJAH",
+    "description": ""
+    },
+    {
+    "word": "RAJES",
+    "description": ""
+    },
+    {
+    "word": "RIOJA",
+    "description": ""
+    },
+    {
+    "word": "SAJOU",
+    "description": ""
+    },
+    {
+    "word": "SHOJI",
+    "description": ""
+    },
+    {
+    "word": "SLOJD",
+    "description": ""
+    },
+    {
+    "word": "SOJA(S)",
+    "description": ""
+    },
+    {
+    "word": "TAJ",
+    "description": ""
+    },
+    {
+    "word": "TAJES",
+    "description": ""
+    },
+    {
+    "word": "THUJA",
+    "description": ""
+    }
+]

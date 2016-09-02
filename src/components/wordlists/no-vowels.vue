@@ -17,7 +17,7 @@ export default {
       this.$set('words', response.json())
       // this.words = response.json()
     }, (response) => {
-      alert('Couldn\'t find shit')
+      // alert('Couldn\'t find shit')
     })
   }
 }

@@ -1,35 +1,24 @@
 <template>
   <ul>
-<!-- ideal world: data bind to <li> here with v-repeat -->
-    <li>BUQSHA(S)</li>
-    <li>BURQA</li>
-    <li>FAQIR(S)</li>
-    <li>QABALA(S)</li>
-    <li>QADI(S)</li>
-    <li>QAID(S)</li>
-    <li>QANAT(S)</li>
-    <li>QAT(S)</li>
-    <li>QI(S)</li>
-    <li>QINDAR(S)</li>
-    <li>QINDARKA</li>
-    <li>QINTAR(S)</li>
-    <li>QIVIUT(S)</li>
-    <li>QOPH(S)</li>
-    <li>QWERTY(S)</li>
-    <li>SHEQALIM</li>
-    <li>SHEQEL</li>
-    <li>SUQ(S)</li>
-    <li>TRANQ(S)</li>
-    <li>UMIAQ(S)</li>
+      <li v-for="word in words">
+        {{word.word}}
+      </li>
   </ul>
 </template>
 
 <script>
 export default {
   data () {
-    return {
-        // vue-resource to grab json formatted words/definitions
-    }
+    return {}
+  },
+  ready () {
+    this.$http.get('./statics/qNoUWords.json').then((response) => {
+      // both of these work, not sure which is optimal
+      this.$set('words', response.json())
+      // this.words = response.json()
+    }, (response) => {
+      // alert('Couldn\'t find shit')
+    })
   }
 }
 </script>

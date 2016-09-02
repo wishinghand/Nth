@@ -3,7 +3,7 @@
   <quasar-layout>
     <div slot="header" class="toolbar">
       <quasar-toolbar-title :padding="1">
-        Nth - hard words
+        Nth
       </quasar-toolbar-title>
     </div>
 
@@ -28,4 +28,7 @@ export default {
 </script>
 
 <style lang="scss">
+  .toolbar {
+    background-color: lightblue
+  }
 </style>

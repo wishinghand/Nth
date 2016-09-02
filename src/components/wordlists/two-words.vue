@@ -1,116 +1,24 @@
 <template>
-      <ul>
-        <li>AA</li>
-        <li>AB</li>
-        <li>AD</li>
-        <li>AE</li>
-        <li>AG</li>
-        <li>AH</li>
-        <li>Al</li>
-        <li>AL</li>
-        <li>AM</li>
-        <li>AN</li>
-        <li>AR</li>
-        <li>AS</li>
-        <li>AT</li>
-        <li>AW</li>
-        <li>AX</li>
-        <li>AY</li>
-        <li>BA</li>
-        <li>BE</li>
-        <li>BI</li>
-        <li>BO</li>
-        <li>BY</li>
-        <li>DE</li>
-        <li>DI</li>
-        <li>DO</li>
-        <li>ED</li>
-        <li>EF</li>
-        <li>EH</li>
-        <li>EL</li>
-        <li>EM</li>
-        <li>EN</li>
-        <li>ER</li>
-        <li>ES</li>
-        <li>ET</li>
-        <li>EX</li>
-        <li>FA</li>
-        <li>FE</li>
-        <li>Fl</li>
-        <li>GI</li>
-        <li>GO</li>
-        <li>HA</li>
-        <li>HE</li>
-        <li>HI</li>
-        <li>HM</li>
-        <li>HO</li>
-        <li>ID</li>
-        <li>IF</li>
-        <li>IN</li>
-        <li>IS</li>
-        <li>IT</li>
-        <li>JO</li>
-        <li>KA</li>
-        <li>KI</li>
-        <li>LA</li>
-        <li>LI</li>
-        <li>LO</li>
-        <li>MA</li>
-        <li>ME</li>
-        <li>MI</li>
-        <li>MM</li>
-        <li>MO</li>
-        <li>MU</li>
-        <li>MY</li>
-        <li>NA</li>
-        <li>NE</li>
-        <li>NO</li>
-        <li>NU</li>
-        <li>OD</li>
-        <li>OE</li>
-        <li>OF</li>
-        <li>OH</li>
-        <li>OI</li>
-        <li>OM</li>
-        <li>ON</li>
-        <li>OP</li>
-        <li>OR</li>
-        <li>OS</li>
-        <li>OW</li>
-        <li>OX</li>
-        <li>OY</li>
-        <li>PA</li>
-        <li>PE</li>
-        <li>PI</li>
-        <li>QI</li>
-        <li>RE</li>
-        <li>SH</li>
-        <li>SI</li>
-        <li>SO</li>
-        <li>TA</li>
-        <li>TI</li>
-        <li>TO</li>
-        <li>UH</li>
-        <li>UM</li>
-        <li>UN</li>
-        <li>UP</li>
-        <li>US</li>
-        <li>UT</li>
-        <li>WE</li>
-        <li>WO</li>
-        <li>XI</li>
-        <li>XU</li>
-        <li>YA</li>
-        <li>YE</li>
-        <li>YO</li>
-        <li>ZA</li>
-      </ul>
+  <ul>
+      <li v-for="word in words">
+        {{word.word}}
+      </li>
+  </ul>
 </template>
 
 <script>
 export default {
   data () {
     return {}
+  },
+  ready () {
+    this.$http.get('./statics/twoLetterWords.json').then((response) => {
+      // both of these work, not sure which is optimal
+      this.$set('words', response.json())
+      // this.words = response.json()
+    }, (response) => {
+      // alert('Couldn\'t find shit')
+    })
   }
 }
 </script>

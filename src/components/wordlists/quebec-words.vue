@@ -1,89 +1,8 @@
 <template>
   <ul>
-    <li>AQUA(S)</li>
-    <li>AQUAE</li>
-    <li>BURQA</li>
-    <li>EQUAL</li>
-    <li>EQUID</li>
-    <li>EQUIP</li>
-    <li>FAQIR</li>
-    <li>FIQUE</li>
-    <li>MAQUI</li>
-    <li>PIQUE</li>
-    <li>QADI(S)</li>
-    <li>QAID(S)</li>
-    <li>QANAT</li>
-    <li>QAT(S)</li>
-    <li>QI(S)</li>
-    <li>QOPH(S)</li>
-    <li>QUA</li>
-    <li>QUACK</li>
-    <li>QUAD(S)</li>
-    <li>QUAFF</li>
-    <li>QUAG(S)</li>
-    <li>QUAI(S)</li>
-    <li>QUAIL</li>
-    <li>QUAKE</li>
-    <li>QUAKY</li>
-    <li>QUALE</li>
-    <li>QUALM</li>
-    <li>QUANT</li>
-    <li>QUARE</li>
-    <li>QUARK</li>
-    <li>QUART</li>
-    <li>QUASH</li>
-    <li>QUASI</li>
-    <li>QUASS</li>
-    <li>QUATE</li>
-    <li>QUAY(S)</li>
-    <li>QUBIT</li>
-    <li>QUEAN</li>
-    <li>QUEEN</li>
-    <li>QUEER</li>
-    <li>QUELL</li>
-    <li>QUERN</li>
-    <li>QUERY</li>
-    <li>QUEST</li>
-    <li>QUEUE</li>
-    <li>QUEY(S)</li>
-    <li>QUICK</li>
-    <li>QUID(S)</li>
-    <li>QUIET</li>
-    <li>QUIFF</li>
-    <li>QUILL</li>
-    <li>QUILT</li>
-    <li>QUIN(S)</li>
-    <li>QUINT</li>
-    <li>QUIP(S)</li>
-    <li>QUIPU</li>
-    <li>QUIRE</li>
-    <li>QUIRK</li>
-    <li>QUIRT</li>
-    <li>QUIT(S)</li>
-    <li>QUITE</li>
-    <li>QUIZ</li>
-    <li>QUOD(S)</li>
-    <li>QUOIN</li>
-    <li>QUOIT</li>
-    <li>QUOLL</li>
-    <li>QUOTA</li>
-    <li>QUOTE</li>
-    <li>QUOTH</li>
-    <li>QUASH</li>
-    <li>ROQUE</li>
-    <li>SQUAB</li>
-    <li>SQUAD</li>
-    <li>SQUAT</li>
-    <li>SQUAW</li>
-    <li>SQUEG</li>
-    <li>SQUIB</li>
-    <li>SQUID</li>
-    <li>SUQ(S)</li>
-    <li>TOQUE</li>
-    <li>TRANQ</li>
-    <li>TUQUE</li>
-    <li>UMIAQ</li>
-    <li>USQUE</li>
+      <li v-for="word in words">
+        {{word.word}}
+      </li>
   </ul>
 </template>
 
@@ -91,6 +10,15 @@
 export default {
   data () {
     return {}
+  },
+  ready () {
+    this.$http.get('./statics/qWords.json').then((response) => {
+      // both of these work, not sure which is optimal
+      this.$set('words', response.json())
+      // this.words = response.json()
+    }, (response) => {
+      // alert('Couldn\'t find shit')
+    })
   }
 }
 </script>
