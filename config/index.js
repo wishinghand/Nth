@@ -18,7 +18,7 @@ module.exports = {
     cssSourceMap: true,
     env: require('./dev.env'),
     publicPath: '',
-    port: 8080,
+    port: 8787,
     proxyTable: {}
   }
 }
