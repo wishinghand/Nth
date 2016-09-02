@@ -1,11 +1,11 @@
 <template>
       <!-- Tabs -->
     <quasar-tabs>
-      <quasar-tab target="#tab-1">
+      <quasar-tab target="#tab-j">
         J
       </quasar-tab>
 
-      <quasar-tab target="#tab-2">
+      <quasar-tab target="#tab-q">
         Q
       </quasar-tab>
 
@@ -32,12 +32,10 @@
     </quasar-tabs>
 
     <!-- Targets -->
-    <div id="tab-1">
-      LOLOLOL
-    </div>
-    <div id="tab-2">
-      <quebec-words></quebec-words>
-    </div>
+    <juliet-words id="tab-j"></juliet-words>
+
+    <quebec-words id="tab-quebec"></quebec-words>
+
 </template>
 
 <script>
