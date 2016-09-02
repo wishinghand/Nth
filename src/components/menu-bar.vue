@@ -1,11 +1,12 @@
 <template>
       <!-- Tabs -->
     <quasar-tabs>
-        <quasar-tab target="#tab-1">
+
+        <quasar-tab target="#tab-j">
             J
         </quasar-tab>
 
-        <quasar-tab target="#tab-2">
+        <quasar-tab target="#tab-q">
             Q
         </quasar-tab>
 
@@ -32,23 +33,20 @@
     </quasar-tabs>
 
     <!-- Targets -->
-    <div id="tab-1">
-      LOLOLOL
-    </div>
-    
-    <div id="tab-2">
-      <quebec-words></quebec-words>
-    </div>
+    <juliet-words id="tab-j"></juliet-words>
 
-        <no-quebec-words id="tab-qnou"></no-quebec-words>
+    <quebec-words id="tab-quebec"></quebec-words>
 
-        <xray-words id="tab-x"></xray-words>
+    <no-quebec-words id="tab-qnou"></no-quebec-words>
 
-        <zebra-words id="tab-z"></zebra-words>
+    <xray-words id="tab-x"></xray-words>
 
-        <two-letter-words id="tab-twoLetters"></two-letter-words>
+    <zebra-words id="tab-z"></zebra-words>
 
-        <three-letter-words id="tab-threeLetters"></three-letter-words>
+    <two-letter-words id="tab-twoLetters"></two-letter-words>
+
+    <three-letter-words id="tab-threeLetters"></three-letter-words>
+
 </template>
 
 <script>
