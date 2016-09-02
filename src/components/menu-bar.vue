@@ -4,7 +4,7 @@
       <quasar-tab target="#tab-1">
         J
       </quasar-tab>
-      
+
       <quasar-tab target="#tab-2">
         Q
       </quasar-tab>
@@ -33,18 +33,23 @@
 
     <!-- Targets -->
     <div id="tab-1">
-      LOLOLOLOLOLOLOL
+      LOLOLOL
     </div>
     <div id="tab-2">
-      D:
+      <quebec-words></quebec-words>
     </div>
 </template>
 
 <script>
 // import various list components and put them in tab content
+import quebecWords from './wordlists/quebec-words.vue'
+
 export default {
   data () {
     return {}
+  },
+  components: {
+    quebecWords
   }
 }
 </script>
