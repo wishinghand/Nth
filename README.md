@@ -1,8 +1,13 @@
-# Quasar App
+# Nth
 
-> A Quasar project
+> A Quasar/Vue project listing all of the unvoweled words, words with q (with and without u), j, x, and z.
 
-## Build Setup
+## Technologies Used:
+- Quasar (Vue.js framework for Cordova)
+- Bulma.io (CSS framework)
+- Cordova
+
+### Build Setup
 
 ``` bash
 # install dependencies
