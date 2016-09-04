@@ -1,9 +1,20 @@
+# Mac
 .DS_Store
+
+# Dev Resources
 node_modules/
+
+# Dist files
 dist/
 npm-debug.log
 selenium-debug.log
+
+# Testing
 test/unit/coverage
 test/e2e/reports
+
+# Cordova
 cordova/platforms
 cordova/plugins
+cordova/**/*.xcuserdatad
+cordova/www
