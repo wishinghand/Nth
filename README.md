@@ -6,6 +6,7 @@
 - Quasar (Vue.js framework for Cordova)
 - Bulma.io (CSS framework)
 - Cordova
+- Webpack
 
 ### Build Setup
 
