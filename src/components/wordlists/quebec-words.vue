@@ -9,16 +9,12 @@
 <script>
 export default {
   data () {
-    return {}
+    return {
+      words: ''
+    }
   },
   ready () {
-    this.$http.get('./statics/qWords.json').then((response) => {
-      // both of these work, not sure which is optimal
-      this.$set('words', response.json())
-      // this.words = response.json()
-    }, (response) => {
-      // alert('Couldn\'t find shit')
-    })
+    this.$set('words', require('json!assets/qWords.json'))
   }
 }
 </script>
