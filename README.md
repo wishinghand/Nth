@@ -13,11 +13,14 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
-quasar play
+# serve with hot reload at localhost:8787
+quasar dev
 
 # build for production with minification
 quasar build
+
+# serve ./dist files after build
+quasar serve ./dist
 
 # run unit tests
 quasar test --unit
