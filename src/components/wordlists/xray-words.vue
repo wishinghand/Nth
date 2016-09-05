@@ -14,7 +14,7 @@ export default {
     }
   },
   ready () {
-    this.$set('words', require('json!assets/xrayWords.json'))
+    this.$set('words', require('assets/xrayWords.json'))
   }
 }
 </script>

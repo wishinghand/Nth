@@ -14,7 +14,7 @@ export default {
     }
   },
   ready () {
-    this.$set('words', require('json!assets/qNoUWords.json'))
+    this.$set('words', require('assets/qNoUWords.json'))
   }
 }
 </script>

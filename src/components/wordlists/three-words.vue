@@ -14,7 +14,7 @@ export default {
     }
   },
   ready () {
-    this.$set('words', require('json!assets/threeLetterWords.json'))
+    this.$set('words', require('assets/threeLetterWords.json'))
   }
 }
 </script>
