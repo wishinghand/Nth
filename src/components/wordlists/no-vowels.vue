@@ -14,7 +14,7 @@ export default {
     }
   },
   ready () {
-    this.$set('words', require('json!assets/noVowels.json'))
+    this.$set('words', require('assets/noVowels.json'))
   }
 }
 </script>
