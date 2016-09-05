@@ -27,8 +27,5 @@ export default {
 }
 </script>
 
-<style lang="scss">
-  .toolbar {
-    background-color: lightblue
-  }
+<style lang="scss" scoped>
 </style>
