@@ -9,20 +9,20 @@
 
     <!-- Replace "div" with "router-view" if using subRoutes -->
     <div class="layout-view">
-      <menu-bar></menu-bar>
+      <wordlists></wordlists>
     </div>
   </quasar-layout>
 </template>
 
 <script>
-import menuBar from './menu-bar.vue'
+import wordlists from './wordlists.vue'
 
 export default {
   data () {
     return {}
   },
   components: {
-    menuBar
+    wordlists
   }
 }
 </script>
