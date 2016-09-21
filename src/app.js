@@ -8,6 +8,8 @@ import Router from './router'
 Vue.use(VueTouch) // Touch events
 // Vue.use(Vuex) // State Management
 Vue.use(VueResource) // Ajax Requests
+// .7 upgrade
+Quasar.theme.set(__THEME)
 Vue.use(Quasar) // Install Quasar Framework
 
 /*
