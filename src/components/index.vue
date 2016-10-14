@@ -7,22 +7,73 @@
       </quasar-toolbar-title>
     </div>
 
-    <!-- Replace "div" with "router-view" if using subRoutes -->
-    <div class="layout-view">
-      <wordlists></wordlists>
-    </div>
+    <quasar-tabs slot="navigation">
+      <quasar-tab v-link="{path: '/juliet', exact: true}">
+        J
+      </quasar-tab>
+
+      <quasar-tab v-link="{path: '/qNoU', exact: true}">
+        Q no U
+      </quasar-tab>
+
+      <quasar-tab v-link="{path: '/quebec', exact: true}">
+        Q
+      </quasar-tab>
+
+      <quasar-tab v-link="{path: '/xray', exact: true}">
+        X
+      </quasar-tab>
+
+      <quasar-tab v-link="{path: '/zebra', exact: true}">
+        Z
+      </quasar-tab>
+
+      <quasar-tab v-link="{path: '/twoAlphas', exact: true}">
+        AA
+      </quasar-tab>
+
+      <quasar-tab v-link="{path: '/twoEchos', exact: true}">
+        EE
+      </quasar-tab>
+
+      <quasar-tab v-link="{path: '/twoIndias', exact: true}">
+        II
+      </quasar-tab>
+
+      <quasar-tab v-link="{path: '/twoOctobers', exact: true}">
+        OO
+      </quasar-tab>
+
+      <quasar-tab v-link="{path: '/twoUnicorns', exact: true}">
+        UU
+      </quasar-tab>
+
+      <quasar-tab v-link="{path: '/twoYankees', exact: true}">
+        YY
+      </quasar-tab>
+
+      <quasar-tab v-link="{path: '/noVowels', exact: true}">
+        No vowels
+      </quasar-tab>
+
+      <quasar-tab v-link="{path: '/threeLetters', exact: true}">
+        3 Letters
+      </quasar-tab>
+
+      <quasar-tab v-link="{path: '/twoLetters', exact: true}">
+        2 Letters
+      </quasar-tab>
+    </quasar-tabs>
+    <router-view></router-view>
   </quasar-layout>
 </template>
 
 <script>
-import wordlists from './wordlists.vue'
-
 export default {
   data () {
     return {}
   },
   components: {
-    wordlists
   }
 }
 </script>

@@ -30,6 +30,62 @@ let routes = {
     subRoutes: {
     }
     */
+  },
+
+  'juliet': {
+    component: load('wordlists/juliet')
+  },
+
+  'noVowels': {
+    component: load('wordlists/noVowels')
+  },
+
+  'qNoU': {
+    component: load('wordlists/qNoU')
+  },
+
+  'quebec': {
+    component: load('wordlists/quebec')
+  },
+
+  'threeLetters': {
+    component: load('wordlists/threeLetters')
+  },
+
+  'twoAlphas': {
+    component: load('wordlists/twoAlphas')
+  },
+
+  'twoEchos': {
+    component: load('wordlists/twoEchos')
+  },
+
+  'twoIndias': {
+    component: load('wordlists/twoIndias')
+  },
+
+  'twoLetters': {
+    component: load('wordlists/twoLetters')
+  },
+
+  'twoOctobers': {
+    component: load('wordlists/twoOctobers')
+  },
+
+  'twoUnicorns': {
+    component: load('wordlists/twoUnicorns')
+  },
+
+  'twoYankees': {
+    component: load('wordlists/twoYankees')
+  },
+
+  'xray': {
+    component: load('wordlists/xray')
+  },
+
+  'zebra': {
+    component: load('wordlists/zebra')
   }
 }
 
