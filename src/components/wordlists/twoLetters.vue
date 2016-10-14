@@ -1,6 +1,6 @@
 <template>
 <div>
-  
+  2 letters
 </div>
 </template>
 

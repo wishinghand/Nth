@@ -1,6 +1,6 @@
 <template>
 <div>
-  
+  2 echos
 </div>
 </template>
 

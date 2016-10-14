@@ -65,16 +65,14 @@
             YY
         </quasar-tab>
       </quasar-tabs>
-
-      <router-view></router-view>
+      <router-view keep-alive></router-view>
     </quasar-layout>
   </div>
 </template>
 
 <script>
 export default {
-  components: {
-  }
+
 }
 </script>
 
