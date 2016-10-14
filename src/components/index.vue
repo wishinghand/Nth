@@ -1,14 +1,14 @@
 <!-- default view on load -->
 <template>
-  <quasar-layout>
-    <div slot="header" class="toolbar">
-      <quasar-toolbar-title :padding="1">
-        Nth
-      </quasar-toolbar-title>
-    </div>
+  <div>
+    <quasar-layout>
+      <div slot="header" class="toolbar">
+        <quasar-toolbar-title :padding="1">
+          Nth
+        </quasar-toolbar-title>
+      </div>
 
-    <quasar-tabs slot="navigation">
-
+      <quasar-tabs slot="navigation">
         <quasar-tab v-link="{path: '/juliet', exact: true}">
             J
         </quasar-tab>
@@ -64,11 +64,11 @@
         <quasar-tab v-link="{path: '/twoYankees', exact: true}">
             YY
         </quasar-tab>
+      </quasar-tabs>
 
-    </quasar-tabs>
-
-    <router-view></router-view>
-  </quasar-layout>
+      <router-view></router-view>
+    </quasar-layout>
+  </div>
 </template>
 
 <script>

@@ -1,5 +1,7 @@
 <template>
-<div>qnou</div>
+<div>
+  
+</div>
 </template>
 
 <script>
