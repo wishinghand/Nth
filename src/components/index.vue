@@ -66,6 +66,8 @@
         </quasar-tab>
 
     </quasar-tabs>
+
+    <router-view></router-view>
   </quasar-layout>
 </template>
 

@@ -1,5 +1,7 @@
 <template>
-
+<div>
+  quebec
+</div>
 </template>
 
 <script>

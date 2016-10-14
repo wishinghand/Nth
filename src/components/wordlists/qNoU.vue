@@ -1,5 +1,5 @@
 <template>
-
+<div>qnou</div>
 </template>
 
 <script>
