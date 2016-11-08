@@ -1,80 +1,102 @@
-<!-- default view on load -->
 <template>
-  <div>
-    <quasar-layout>
-      <div slot="header" class="toolbar">
-        <quasar-toolbar-title :padding="1">
-          Nth
-        </quasar-toolbar-title>
-      </div>
+  <quasar-layout>
+    <div slot="header" class="toolbar bg-amber-2" >
+      <quasar-toolbar-title :padding="1" class="text-center text-brown-10">
+        Nth - A Provocative Problem Solver
+      </quasar-toolbar-title>
+    </div>
 
-      <quasar-tabs slot="navigation">
-        <quasar-tab v-link="{path: '/juliet', exact: true}">
-            J
-        </quasar-tab>
+    <quasar-tabs slot="navigation" class="bg-brown-10">
+      <quasar-tab route="/wordlist/juliet">
+          J
+      </quasar-tab>
 
-        <quasar-tab v-link="{path: '/quebec', exact: true}">
-            Q
-        </quasar-tab>
+      <quasar-tab route="/wordlist/quebec">
+          Q
+      </quasar-tab>
 
-        <quasar-tab  v-link="{path: '/qNoU', exact: true}">
-            Q no U
-        </quasar-tab>
+      <quasar-tab route="/wordlist/qNoU">
+          Q no U
+      </quasar-tab>
 
-        <quasar-tab  v-link="{path: '/xray', exact: true}">
-            X
-        </quasar-tab>
+      <quasar-tab route="/wordlist/xray">
+          X
+      </quasar-tab>
 
-        <quasar-tab  v-link="{path: '/zebra', exact: true}">
-            Z
-        </quasar-tab>
+      <quasar-tab route="/wordlist/zebra">
+          Z
+      </quasar-tab>
 
-        <quasar-tab  v-link="{path: '/twoLetters', exact: true}">
-            2 Letters
-        </quasar-tab>
+      <quasar-tab route="/wordlist/noVowels">
+        No Vowels
+      </quasar-tab>
 
-        <quasar-tab v-link="{path: '/threeLetters', exact: true}">
-            3 Letters
-        </quasar-tab>
+      <quasar-tab route="/wordlist/twoLetters">
+          2 Letters
+      </quasar-tab>
 
-        <quasar-tab v-link="{path: '/noVowels', exact: true}">
-            No vowels
-        </quasar-tab>
+      <quasar-tab route="/wordlist/threeLetters">
+          3 Letters
+      </quasar-tab>
 
-        <quasar-tab v-link="{path: '/twoAlphas', exact: true}">
-            AA
-        </quasar-tab>
+      <quasar-tab route="/wordlist/twoAlphas">
+          AA
+      </quasar-tab>
 
-        <quasar-tab v-link="{path: '/twoEchos', exact: true}">
-            EE
-        </quasar-tab>
+      <quasar-tab route="/wordlist/twoEchos">
+          EE
+      </quasar-tab>
 
-        <quasar-tab v-link="{path: '/twoIndias', exact: true}">
-            II
-        </quasar-tab>
+      <quasar-tab route="/wordlist/twoIndias">
+          II
+      </quasar-tab>
 
-        <quasar-tab v-link="{path: '/twoOctobers', exact: true}">
-            OO
-        </quasar-tab>
+      <quasar-tab route="/wordlist/twoOctobers">
+          OO
+      </quasar-tab>
 
-        <quasar-tab v-link="{path: '/twoUnicorns', exact: true}">
-            UU
-        </quasar-tab>
+      <quasar-tab route="/wordlist/twoUnicorns">
+          UU
+      </quasar-tab>
 
-        <quasar-tab v-link="{path: '/twoYankees', exact: true}">
-            YY
-        </quasar-tab>
-      </quasar-tabs>
-      <router-view keep-alive></router-view>
-    </quasar-layout>
-  </div>
+      <quasar-tab route="/wordlist/twoYankees">
+          YY
+      </quasar-tab>
+    </quasar-tabs>
+
+    <router-view class="layout-view" ></router-view>
+  </quasar-layout>
 </template>
 
 <script>
 export default {
-
+  data () {
+    return {
+      selectedList: ''
+    }
+  }
 }
 </script>
 
-<style lang="scss" scoped>
+<style>
+
+  li {
+    list-style: none;
+  }
+
+  .instruction {
+    text-align: center;
+    font-style: italic;
+  }
+
+  .wordStyle {
+    width: 66%;
+    margin-bottom: .5rem;
+    padding: .25rem;
+  }
+
+  .defText {
+    padding: 1.5rem;
+  }
+
 </style>

@@ -1,4 +1,5 @@
 var
+  env = process.env.NODE_ENV
   path = require('path'),
   webpack = require('webpack'),
   config = require('../config'),
@@ -6,13 +7,20 @@ var
   projectRoot = path.resolve(__dirname, '../'),
   autoprefixer = require('autoprefixer')
 
+// check env & config/index.js to decide weither to enable CSS Sourcemaps for the
+// various preprocessor loaders added to vue-loader at the end of this file
+var
+  cssSourceMapDev = (env === 'development' && config.dev.cssSourceMap),
+  cssSourceMapProd = (env === 'production' && config.build.productionSourceMap),
+  useCssSourceMap = cssSourceMapDev || cssSourceMapProd
+
 module.exports = {
   entry: {
-    app: './src/app.js'
+    app: './src/main.js'
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
-    publicPath: process.env.NODE_ENV === 'production' ? config.build.publicPath : config.dev.publicPath,
+    publicPath: config[env === 'production' ? 'build' : 'dev'].publicPath,
     filename: 'js/[name].js',
     chunkFilename: 'js/[id].[chunkhash].js'
   },
@@ -44,18 +52,14 @@ module.exports = {
         loader: 'vue'
       },
       {
-        test: /\.js$/,
-        loader: 'babel',
-        include: projectRoot,
-        exclude: /node_modules/
-      },
-      {
         test: /\.json$/,
         loader: 'json'
       },
       {
-        test: /\.html$/,
-        loader: 'vue-html'
+        test: /\.js$/,
+        loader: 'babel',
+        include: projectRoot,
+        exclude: /node_modules/
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
@@ -77,6 +81,9 @@ module.exports = {
   },
   eslint: {
     formatter: require('eslint-friendly-formatter')
+  },
+  vue: {
+    loaders: utils.cssLoaders({ sourceMap: useCssSourceMap, postcss: true })
   },
   postcss: function () {
     return [autoprefixer]

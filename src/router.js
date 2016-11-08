@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 Vue.use(VueRouter)
 
 /*
@@ -17,79 +18,25 @@ function load (name) {
   }
 }
 
-let routes = {
-  // Not found
-  '*': {
-    component: load('error404')
-  },
+export default new VueRouter({
+  /*
+   * NOTE! VueRouter "history" mode DOESN'T works for Cordova builds,
+   * it is only to be used only for websites.
+   *
+   * If you decide to go with "history" mode, please also open /config/index.js
+   * and set "build.publicPath" to something other than an empty string.
+   * Example: '/' instead of current ''
+   *
+   * If switching back to default "hash" mode, don't forget to set the
+   * build publicPath back to '' so Cordova builds work again.
+   */
 
-  // Default
-  '/': {
-    component: load('index')
-    /*
-    subRoutes: {
-    }
-    */
-  },
-
-  'juliet': {
-    component: load('wordlists/juliet')
-  },
-
-  'quebec': {
-    component: load('wordlists/quebec')
-  },
-
-  'qNoU': {
-    component: load('wordlists/qNoU')
-  },
-
-  'xray': {
-    component: load('wordlists/xray')
-  },
-
-  'zebra': {
-    component: load('wordlists/zebra')
-  },
-
-  'twoLetters': {
-    component: load('wordlists/twoLetters')
-  },
-
-  'threeLetters': {
-    component: load('wordlists/threeLetters')
-  },
-
-  'noVowels': {
-    component: load('wordlists/noVowels')
-  },
-
-  'twoAlphas': {
-    component: load('wordlists/twoAlphas')
-  },
-
-  'twoEchos': {
-    component: load('wordlists/twoEchos')
-  },
-
-  'twoIndias': {
-    component: load('wordlists/twoIndias')
-  },
-
-  'twoOctobers': {
-    component: load('wordlists/twoOctobers')
-  },
-
-  'twoUnicorns': {
-    component: load('wordlists/twoUnicorns')
-  },
-
-  'twoYankees': {
-    component: load('wordlists/twoYankees')
-  }
-}
-
-let Router = new VueRouter()
-Router.map(routes)
-
-export default Router
+  routes: [
+    { path: '/', component: load('index'),
+      children: [
+        { path: '/wordlist/:wordtype', component: load('wordlist') }
+      ]
+    }, // Default
+    { path: '*', component: load('error404') } // Not found
+  ]
+})
