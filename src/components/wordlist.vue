@@ -15,10 +15,12 @@
     :content-css="{backgroundColor: '#F9E3AB'}"
   >
 
-    <h4 class="text-center">Definition of <b>{{returnedWord}}</b></h4>
-    <p class="defText" v-html="definition">
-      <!-- {{definition}} -->
-    </p>
+    <h4 class="text-center">Definition of <b>{{requestedWord}}</b></h4>
+    <ol>
+      <li v-for="def in definitions">
+        {{def}}
+      </li>
+    </ol>
     <button class="round closeBtn" @click="$refs.basicModal.close()">Close</button>
 
   </quasar-modal>
@@ -30,8 +32,8 @@ export default {
   data () {
     return {
       wordList: '',
-      returnedWord: '',
-      definition: ''
+      requestedWord: '',
+      definitions: []
     }
   },
 
@@ -49,8 +51,8 @@ export default {
     },
     openModal (word) {
       // clears modal when opening a new page
-      this.returnedWord = ''
-      this.definition = ''
+      this.requestedWord = ''
+      this.definitions = []
       this.$refs.basicModal.open()
       this.getDefinition(word)
     },
@@ -76,16 +78,18 @@ export default {
       .then(function (response) {
         console.log(response)
         if (response.data.definitions.length === 0) {
-          that.returnedWord = response.data.word
-          that.returnedWord = that.returnedWord.charAt(0).toUpperCase() + that.returnedWord.slice(1)
-          that.definition = 'We were unable to find the definition for ' + that.returnedWord + '.'
+          that.requestedWord = response.data.word
+          that.requestedWord = that.requestedWord.charAt(0).toUpperCase() + that.requestedWord.slice(1)
+          that.definitions = 'We were unable to find the definition for ' + that.requestedWord + '.'
         }
         else {
-          that.returnedWord = response.data.word
-          that.returnedWord = that.returnedWord.charAt(0).toUpperCase() + that.returnedWord.slice(1)
-          // that.definition = response.data.definitions[0].definition
+          that.requestedWord = response.data.word
+          that.requestedWord = that.requestedWord.charAt(0).toUpperCase() + that.requestedWord.slice(1)
+
           for (var i = 0; i < response.data.definitions.length; i++) {
-            that.definition += (i + 1) + '. ' + response.data.definitions[i].definition + '<br />'
+            // that.definition += (i + 1) + '. ' + response.data.definitions[i].definition + '<br />'
+            // that.definitions += response.data.definitions[i].definition
+            that.definitions.push(response.data.definitions[i].definition)
           }
         }
       })

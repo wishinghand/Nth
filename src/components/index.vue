@@ -81,7 +81,7 @@ export default {
 <style>
 
   li {
-    list-style: none;
+    /* list-style: none; */
   }
 
   .instruction {
