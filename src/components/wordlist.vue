@@ -57,7 +57,6 @@ export default {
       this.getDefinition(word)
     },
     getDefinition (word) {
-      var that = this
       var endOfWord = word.slice(-3)
 
       if (endOfWord === '(S)') {
@@ -75,22 +74,21 @@ export default {
       }
 
       this.$http.get(`https://wordsapiv1.p.mashape.com/words/${word}/definitions`, config)
-      // use arrow functions to get rid of 'that = this'
-      .then(function (response) {
+      .then(response => {
         console.log(response)
         if (response.data.definitions.length === 0) {
-          that.requestedWord = response.data.word
-          that.requestedWord = that.requestedWord.charAt(0).toUpperCase() + that.requestedWord.slice(1)
-          that.definitions = 'We were unable to find the definition for ' + that.requestedWord + '.'
+          this.requestedWord = response.data.word
+          this.requestedWord = this.requestedWord.charAt(0).toUpperCase() + this.requestedWord.slice(1)
+          this.definitions = 'We were unable to find the definition for ' + this.requestedWord + '.'
         }
         else {
-          that.requestedWord = response.data.word
-          that.requestedWord = that.requestedWord.charAt(0).toUpperCase() + that.requestedWord.slice(1)
+          this.requestedWord = response.data.word
+          this.requestedWord = this.requestedWord.charAt(0).toUpperCase() + this.requestedWord.slice(1)
 
           for (var i = 0; i < response.data.definitions.length; i++) {
-            // that.definition += (i + 1) + '. ' + response.data.definitions[i].definition + '<br />'
-            // that.definitions += response.data.definitions[i].definition
-            that.definitions.push(response.data.definitions[i].definition)
+            // this.definition += (i + 1) + '. ' + response.data.definitions[i].definition + '<br />'
+            // this.definitions += response.data.definitions[i].definition
+            this.definitions.push(response.data.definitions[i].definition)
           }
         }
       })
