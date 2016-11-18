@@ -74,7 +74,8 @@ export default {
         }
       }
 
-      this.$http.get('https://wordsapiv1.p.mashape.com/words/' + word + '/definitions', config)
+      this.$http.get(`https://wordsapiv1.p.mashape.com/words/${word}/definitions`, config)
+      // use arrow functions to get rid of 'that = this'
       .then(function (response) {
         console.log(response)
         if (response.data.definitions.length === 0) {
